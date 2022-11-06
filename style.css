@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap%27");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+  /* font-family: "Electrolize", sans-serif; */
+  font-family: "VT323", monospace;
+}
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+div {
+  background-color: transparent;
+}
+header {
+  height: 80px;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #24252a;
+}
+nav .navContent {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 1500px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navContent .logo a {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+}
+.navContent .logo img {
+  width: 70px;
+  height: 30px;
+}
+.navContent .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navContent .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+.nav-links li a {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 4px;
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a :hover {
+  cursor: pointer;
+  color: aquamarine;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/*content*/
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42vw;
+  background-color: blue;
+}
+#montage {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  object-position: 46% center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.frontvideo {
+  flex-direction: column;
+  position: absolute;
+  display: flex;
+  padding: 4rem 5%;
+  margin: 0 auto;
+  align-items: center;
+  height: 36vw;
+  justify-content: center;
+  z-index: 10;
+  background-color: transparent;
+  width: 100%;
+  font-size: 200px;
+  color: white;
+}
+
+.gamename {
+  background-color: transparent;
+}
+#logoo {
+  background-color: transparent;
+  height: 200px;
+}
+.playButton {
+  font-size: 80px;
+  background-color: transparent;
+}
+
+/*content 1 GAMES*/
+.content1 {
+  height: 1000 px;
+  background-color: antiquewhite;
+  padding: 60px;
+  display: flex;
+  background-image: url("image/Illustration7.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.leftcontainer {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-left: 60px;
+}
+
+.rightcontainer {
+  padding-left: 150px;
+  height: 100%;
+  width: 60%;
+}
+
+.weare {
+  color: rgb(8, 4, 27);
+  display: flex;
+  font-size: 85px;
+  font-weight: bold;
+  /* font-family: "Electrolize", sans-serif; */
+  font-family: "VT323", monospace;
+}
+.description {
+  /* font-family: "Electrolize", sans-serif; */
+  font-family: "VT323", monospace;
+  background-color: transparent;
+  margin-top: 50px;
+  position: relative;
+  font-size: 25px;
+  color: rgb(8, 4, 27);
+}
+.gamebutton {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: transparent;
+}
+#montage2 {
+  width: 80%;
+}
+/*end content1*/
+
+/* content2 */
+.content2 {
+  height: 40vw;
+  background-color: salmon;
+  display: flex;
+  background-image: url("image/Illustration3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.left {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  right: 0;
+  width: 40%;
+  height: 100%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#ava {
+  height: 600px;
+  position: relative;
+  justify-content: right;
+  top: 20px;
+  background-color: transparent;
+  animation-name: goUpDown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes goUpDown {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: -50px;
+  }
+  75% {
+    top: 50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.skin {
+  padding-top: 20px;
+  position: relative;
+  font-size: 150px;
+  font-weight: bold;
+  color: white;
+}
+.skind {
+  font-family: "VT323", monospace;
+  position: relative;
+  padding: 50px;
+  font-size: 40px;
+  color: white;
+}
+.skinButton {
+  padding-left: 30px;
+  padding-right: 80px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: transparent;
+}
+/*end content2*/
+
+/*content 3*/
+.content3 {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background-image: url("image/haietedcastle.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.leftcon {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.rightcon {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.rightcon h2 {
+  padding: 20px;
+  width: 800px;
+}
+.rightcon p {
+  width: 500px;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+}
+.skinhallo {
+  display: flex;
+  justify-content: center;
+}
+
+#skinimage {
+  height: 500px;
+  width: 700px;
+  background-color: transparent;
+}
+
+.halloween {
+  text-align: center;
+  background-color: transparent;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
+/*end content3*/
+
+/*content4*/
+.content4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 800px;
+  background-color: gray;
+  background-image: url("image/Illustration6.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.head {
+  font-size: 90px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  gap: 50px;
+}
+
+.row {
+  /* margin: 0 -5px; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.row:after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* .card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: flex-end;
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+} */
+
+.card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: flex-end;
+  width: 300px;
+  height: 300px;
+  /* gap: 50px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: transparent;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+#card1 {
+  background-image: url("image/LogoKv.png");
+  background-position: center;
+  background-size: cover;
+}
+#card2 {
+  background-image: url("image/BMG-Branding KV.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#card3 {
+  background-image: url("image/Daily Login Banner [1024x540].jpg");
+  background-position: center;
+  background-size: cover;
+}
+#card4 {
+  background-image: url("image/BMG-social-mmoKV.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.card p {
+  background-color: transparent;
+}
+.card div {
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+}
+/*end content4*/
+
+.footer{
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px;background-color: #24252a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.txt{
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.footpath a{
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+

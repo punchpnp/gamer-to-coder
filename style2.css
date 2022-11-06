@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap%27");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  /* font-family: "Electrolize", sans-serif; */
+  font-family: "VT323", monospace;
+}
+
+header{
+  height: 80px;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #24252A;
+}
+nav .navContent{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 1500px;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navContent .logo a{
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+}
+.navContent .logo img{
+  width: 70px;
+  height: 30px;
+}
+.navContent .nav-links{
+  display: flex;
+  align-items: center;
+}
+
+.navContent .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+.nav-links li a{
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 4px;
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a :hover{
+  cursor: pointer;
+  color: aquamarine;
+}
+
+.page {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.center {
+  height: 100vh;
+  width: 50vw;
+}
+
+img {
+  height: 500px;
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+p, span{
+  font-family: "Poppins", sans-serif;
+}
+
+.footer{
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px;background-color: #24252a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.txt p{
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  font-family: "VT323", monospace;
+}
+
+.footpath a{
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+

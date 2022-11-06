@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap%27");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #24252a;
+}
+nav .navContent {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 1500px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navContent .logo a {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+}
+.navContent .logo img {
+  width: 70px;
+  height: 30px;
+}
+.navContent .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navContent .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+.nav-links li a {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 4px;
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a :hover {
+  cursor: pointer;
+  color: aquamarine;
+}
+
+h1 {
+  font-family: "VT323", monospace;
+  font-size: 70px;
+  font-weight: bold;
+  padding: 20px;
+}
+.row {
+  background-image: url("Illustration7\ copy.png");
+  height: 1200px;
+  background-repeat: repeat;
+  background-size: contain;
+  /* margin: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  background-color: #dcdcdc;
+  text-align: center;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+
+  border-radius: 10px;
+
+  display: inline-block;
+
+  vertical-align: middle;
+}
+.card img {
+  width: 250px;
+}
+.card .detail {
+  height: 150px;
+  overflow-y: scroll;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.card:hover {
+  background-color: white;
+}
+
+.footer{
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px;background-color: #24252a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.txt p{
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  font-family: "VT323", monospace;
+}
+
+.footpath a{
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
